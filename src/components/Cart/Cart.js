@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -19,7 +20,7 @@ const Cart = (props) => {
     const grandTotal = (totalPrice + shipping + Number(tax).toFixed(2));
 
     return (
-        <div>
+        <div className="Cart-section">
             <h3>Order Summary</h3>
             <h4>Items ordered: {cart.length}</h4>
             <p>Product Price: ${totalPrice}</p>
